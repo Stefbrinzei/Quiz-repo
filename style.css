@@ -35,6 +35,15 @@ h1{
     background-color: rgb(169, 13, 205 );
 }
 
+.question-block h4{
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.question-bloc label{
+    font-size: 20px;
+}
+
 .question-block input[type='radio']{
     transform:scale(1.8);  
     margin: 10px;
