@@ -1,104 +1,102 @@
-*{
-    box-sizing: border-box;
+*, ::before, ::after{/* pseudos élément pour permettre par ex d'ajouter des ornements commes des icones ou autres décorations */
+    box-sizing: border-box;/* la taille totale de l'élément reste constante, quel que soit le rembourrage ou la bordure ajouté. */
     margin: 0;
     padding: 0;
 }
-
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial,Arial, Helvetica, sans-serif;
+   /*  background-color: rgb(211, 139, 211); */
 }
-
 h1{
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: 'Russo One', sans-serif;
+    font-weight: lighter;/* moins gras */
     letter-spacing: 2px;
     padding: 30px 0;
-    font-size: 40 px;
+    font-size: 40px;
     color: rgb(52, 32, 111);
     display: flex;
     justify-content: center;
 }
-
 .container-global{
     width: 70%;
     max-width: 800px;
     margin: 0 auto;
-    height: 0 auto;
+    height: auto;
+  /*   background: pink; */
 }
-
 .question-block{
     padding: 15px 25px 25px;
     margin: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    background-color: rgb(169, 13, 205 );
+    box-shadow:0 2px 10px rgba(0, 0, 0, 0.5) ;
+    background-color: rgb(169, 131, 205);
 }
-
 .question-block h4{
     padding: 10px 0;
     font-size: 22px;
 }
-
-.question-bloc label{
+.question-block label{
     font-size: 20px;
 }
-
-.question-block input[type='radio']{
-    transform:scale(1.8);  
+.question-block input[type='radio']{/* pour selectionner les input de type radio */
+    transform:scale(1.8) ;/* Propriété qui va agrandir de 180% l'input radio */
     margin: 10px;
 }
-
-form button{
-    border: none;
-    outline: none;
-    border: 3px solid rgb(139, 194, 211);
-    border-radius: 5px;
-    display: block;
-    margin: 20px auto;
-    padding: 20px 20px;
-    cursor: pointer;
-    font-size: 25px;
-    transition: background-color 0.2s ease-in-out;
-    background-color: rgb(58, 17, 97);
-    color: white;
-}
-form button:hover{
-    background-color: rgb(139, 194, 211);
-    color: blueviolet;
-}
-
-.echec{
-    animation: echec 0.3s ease-in-out;
-}
-
 .resultats{
-    text-align: center;
     padding: 25px;
     margin: 10px 0px 70px;
-}
+    box-shadow:0 2px 10px rgba(0, 0, 0, 0.5) ;
+    background-color: rgb(169, 131, 205);
 
+}
 .resultats h2{
     text-align: center;
 }
-
 .aide{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.note{
     text-align: center;
     font-size: 25px;
     margin-top: 10px;
 }
 
-@keyframes echec {
+form button{
+ border: none;/* on enlève les bordure de base */
+ outline: none;
+ border: 3px solid rgb(139, 194, 211);
+ border-radius: 5px;
+ display: block;
+ margin: 20px auto;
+ padding: 20px 20px;
+ cursor: pointer;
+ font-size: 25px;
+ transition: background-color 0.2s ease-in-out;
+ background-color: rgb(58, 17, 97);
+ color: white;
+}
+form button:hover{
+    background-color: rgb(139, 194, 211);
+    color: rgb(58, 17, 97);
+}
+/* declaration de la classe echec pour créer une animation */
+.echec{
+    animation:echec 0.3s ease-in-out;
+}
+/* Parametrage de l'animation */
+@keyframes echec{
     0%{
         transform: translateX(0px);
     }
-    33%{
+    33% {
         transform: translateX(5px);
     }
-    66%{
+    66% {
         transform: translateX(-5px);
     }
     100%{
-        transform: translateX(0px)
+    transform: translateX(0px);
     }
 }
