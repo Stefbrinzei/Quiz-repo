@@ -62,5 +62,18 @@ switch (nbDeFautes) {
             aideResultat.innerText = "Retente une autre réponse dans les cases rouges, puis re-valide !";
             texteResultat.innerText = "2/5";
             break;
+        case 4: 
+            titreResultat.innerText = `${emojis[2]}Ne lâche rien${emojis[4]} !`;
+            aideResultat.innerText = "Retente une autre réponse dans les cases rouges, puis re-valide !";
+            texteResultat.innerText = "1/5";
+            break
+        case 5:
+            titreResultat.innerText = `${emojis[3]}Ne lâche rien${emojis[3]} !`;
+            aideResultat.innerText = "Retente une autre réponse dans les cases rouges, puis re-valide !";
+            texteResultat.innerText = "0/5";
+            break
+            default:
+                titreResultat.innerText = 'Woops, cas innatendu';
+                break;
 
 }
