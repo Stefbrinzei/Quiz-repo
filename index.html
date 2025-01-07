@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quiz Culture générale</h1>
+    <div class="container-global">
+        <!-- Question 1 -->
+        <form class="form-quiz">
+            <div class="question-block">
+            <h4>Qui etait l'empereur de France le 02 Décembre 1804</h4>
+            <div>
+                <input type="radio" id="clovis" name="q1" value="checked">
+                <label for="clovis">Clovis</label>
+            </div>
+            <div>
+                <input type="radio" id="lincoln" name="q1" value="b">
+                <label for="lincoln">Lincoln</label>
+            </div>
+            <div>
+                <input type="radio" id="Bonaparte" name="q1" value="c">
+                <label for="Bonaparte">Bonaparte</label>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-global">
+        <!-- Question 2 -->
+        <form class="form-quiz">
+            <div class="question-block">
+            <h4>Quelle est la date d'indépendance des Etats-Unis?</h4>
+            <div>
+                <input type="radio" id="date1" name="q2" value="checked">
+                <label for="date1">4 Juillet 1776</label>
+            </div>
+            <div>
+                <input type="radio" id="date2" name="q2" value="b">
+                <label for="date2">18 Avril 1856</label>
+            </div>
+            <div>
+                <input type="radio" id="date3" name="q2" value="c">
+                <label for="date3">30 Juin 1925</label>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-global">
+        <!-- Question 3 -->
+        <form class="form-quiz">
+            <div class="question-block">
+            <h4>La chute de l'empire romain se situe en ?</h4>
+            <div>
+                <input type="radio" id="date4" name="q3" value="checked">
+                <label for="date4">18 après J-C.</label>
+            </div>
+            <div>
+                <input type="radio" id="date5" name="q3" value="b">
+                <label for="date5">395 après J-C.</label>
+            </div>
+            <div>
+                <input type="radio" id="date6" name="q3" value="c">
+                <label for="date6">740 avant J-C.</label>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-global">
+        <!-- Question 4 -->
+        <form class="form-quiz">
+            <div class="question-block">
+            <h4>Quelle est la capitale de la Slovénie</h4>
+            <div>
+                <input type="radio" id="Ljubljana" name="q4" value="checked">
+                <label for="Ljubljana">Ljubljana</label>
+            </div>
+            <div>
+                <input type="radio" id="belgrade" name="q4" value="b">
+                <label for="belgrade">Belgrade</label>
+            </div>
+            <div>
+                <input type="radio" id="Bratislava" name="q4" value="c">
+                <label for="Bratislava">Bratislava</label>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-global">
+        <!-- Question 5 -->
+        <form class="form-quiz">
+            <div class="question-block">
+            <h4>Combien d'habitants compte l'Irlande en 2020 ?</h4>
+            <div>
+                <input type="radio" id="n1" name="q5" value="checked">
+                <label for="n1">1.365 million</label>
+            </div>
+            <div>
+                <input type="radio" id="n2" name="q5" value="b">
+                <label for="n2">21 millions</label>
+            </div>
+            <div>
+                <input type="radio" id="n3" name="q5" value="c">
+                <label for="n3">4.9 millions</label>
+            </div>
+            <!-- Bouton valider -->
+            <button type="submit">Valide ton choix</button>
+        </form>
+
+        <!-- Afficher les résultats -->
+        <div class="resultats">
+            <h2>Clique sur valider pour voir tes résultats</h2>
+            <p class="aide"></p>
+            <p class="note"></p>
+        </div>
+    </div>
+    
+<script src="/script.js"></script>  
+</body>
+</html>

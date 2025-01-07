@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.question-block input[type='radio']{
+    transform:scale(1.8);  
+    margin: 10px;
+}
+
+form button{
+    border: none;
+    outline: none;
+    border: 3px solid rgb(139, 194, 211);
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    padding: 20px 20px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgb(58, 17, 97);
+    color: white;
+}
+form button:hover{
+    background-color: rgb(139, 194, 211);
+    color: blueviolet;
+}
+
+.echec{
+    animation: echec 0.3s ease-in-out;
+}
+
+@keyframes echec {
+    0%{
+        transform: translateX(0px);
+    }
+    33%{
+        transform: translateX(5px);
+    }
+    66%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(0px)
+    }
+}
