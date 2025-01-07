@@ -37,9 +37,30 @@ function afficherResultats(tabCheck){
 
     const nbDeFautes =tabCheck.filter(el => el !==true).lenght;
 console.log(nbDeFautes);
-/*el (l'élément )on va filtrer chaque élément qui est différent de true*/ 
+/*el (l'élément )on va filtrer chaque élément qui est différent de true
+.lenght longueur du tableau */ 
+
 }
 switch (nbDeFautes) {
-    case 0:
-        titreResultat.innerText ={`emojis`}
+        case 0:
+            titreResultat.innerText = `${emojis[1]}Bravo, c'est un sans faute !`;
+            aideResultat.innerText = "";
+            texteResultat.innerText = "5/5";
+            break;
+        case 1:
+            titreResultat.innerText = `${emojis[1]}Tu y es presque !`;
+            aideResultat.innerText = "Retente une autre réponse dans la case rouge, puis re-valide !";
+            texteResultat.innerText = "4/5";
+            break;
+        case 2:
+            titreResultat.innerText = `${emojis[1]}Encore un effort .....${emojis[2]} !`;
+            aideResultat.innerText = "Retente une autre réponse dans les cases rouges, puis re-valide !";
+            texteResultat.innerText = "3/5";
+            break;
+        case 3:
+            titreResultat.innerText = `${emojis[2]}Il reste quelques erreurs${emojis[4]} !`;
+            aideResultat.innerText = "Retente une autre réponse dans les cases rouges, puis re-valide !";
+            texteResultat.innerText = "2/5";
+            break;
+
 }
