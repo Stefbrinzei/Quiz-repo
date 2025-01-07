@@ -77,3 +77,22 @@ switch (nbDeFautes) {
                 break;
 
 }
+// Déclaration de la qui va afficher les couleurs en fonction des réponses
+afficherResultats(verifTableau);
+couleurFonction(verifTableau);
+verifTableau = [];
+
+function couleurFonction(tabValBool){
+    for(let j = 0; j< tabValBool.lenght;j++){
+        if(tabValBool[j] === true){
+            toutesLesQuestions[j].Style.background = 'lightgreen';
+        }else{
+            toutesLesQuestions[j].style.background = '#ffb8b8';
+            toutesLesQuestions[j].classList.add('echec');
+
+            setTimeout(() =>{
+                toutesLesQuestions[j].classList.remove('echec');
+            },500)
+        }
+    }
+}
