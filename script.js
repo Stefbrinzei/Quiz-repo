@@ -82,17 +82,17 @@ afficherResultats(verifTableau);
 couleurFonction(verifTableau);
 verifTableau = [];
 
-function couleurFonction(tabValBool){
-    for(let j = 0; j< tabValBool.lenght;j++){
+function couleurFonction(tabValBool){//le tableau des valeurs booléennes true et false
+    for(let j = 0; j< tabValBool.lenght;j++){//boucle qui parcoure le tableau
         if(tabValBool[j] === true){
-            toutesLesQuestions[j].style.background = 'lightgreen';
+            toutesLesQuestions[j].style.background = 'lightgreen';//si la réponse est true alors le bloc question sera de couleur verte
         }else{
-            toutesLesQuestions[j].style.background = '#ffb8b8';
-            toutesLesQuestions[j].classList.add('echec');
+            toutesLesQuestions[j].style.background = '#ffb8b8';// si la réponse est false alors le bloc question sera rouge
+            toutesLesQuestions[j].classList.add('echec');//animation de gauche à droite
 
-            setTimeout(() =>{
-                toutesLesQuestions[j].classList.remove('echec');
-            },500)
+            setTimeout(() =>{//fonction qui arrête l'animation
+                toutesLesQuestions[j].classList.remove('echec');//propriété qui supprime la classe 'échec' du DOM(l'animation) au cas où l'utilisation se trompe à nouveau
+            },500)//(500 millisecondes)
         }
     }
 }
