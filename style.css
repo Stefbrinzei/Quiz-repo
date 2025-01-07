@@ -4,10 +4,35 @@
     padding: 0;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
+    letter-spacing: 2px;
+    padding: 30px 0;
+    font-size: 40 px;
+    color: rgb(52, 32, 111);
+    display: flex;
+    justify-content: center;
+}
+
+.container-global{
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 0 auto;
+}
+
+.question-block{
+    padding: 15px 25px 25px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(169, 13, 205 );
 }
 
 .question-block input[type='radio']{
