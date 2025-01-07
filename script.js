@@ -85,7 +85,7 @@ verifTableau = [];
 function couleurFonction(tabValBool){
     for(let j = 0; j< tabValBool.lenght;j++){
         if(tabValBool[j] === true){
-            toutesLesQuestions[j].Style.background = 'lightgreen';
+            toutesLesQuestions[j].style.background = 'lightgreen';
         }else{
             toutesLesQuestions[j].style.background = '#ffb8b8';
             toutesLesQuestions[j].classList.add('echec');
